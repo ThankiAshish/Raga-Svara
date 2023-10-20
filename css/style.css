@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap');
+
+:root {
+    --accent: #C7212C;
+    --primary: #AB7C67;
+    --font-color: #666666;
+    --white: #FFFFFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Dosis", sans-serif;
+    color: var(--font-color);
+}
+
+a {
+    text-decoration: none;
+}
+
+html,
+body {
+    min-height: 100vh;
+}
+
+section {
+    height: 100vh;
+}
+
+section .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    height: 100vh;
+}
+
+.btn-big {
+    background: var(--accent);
+    outline: none;
+    border: none;
+    border-radius: 1rem;
+    aspect-ratio: 1 / 1;
+    width: 80px;
+    font-size: .9rem;
+    color: var(--white);
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.underlined-btn {
+    font-size: 1.3rem;
+    font-weight: 700;
+    border-bottom: 1px solid var(--font-color);
+}
+
+.banner {
+    height: 80%;
+    width: 100%;
+    border-radius: 1.2rem;
+    background-position: center center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+}
+
+.offer-card {
+    height: 70%;
+    width: 300px;
+    background: var(--white);
+    border-radius: 1rem;
+}
+
+.offer-card .card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 85%;
+    width: 100%;
+    text-align: center;
+    font-weight: 300;
+    border-bottom: 1px solid var(--font-color);
+    padding: 2rem;
+}
+
+.offer-card .card-body h1 {
+    font-size: 2.3rem;
+    font-weight: 700;
+}
+
+.offer-card .card-body h3 {
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+.offer-card .card-footer {
+    height: 15%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    background: url("../assets/images/Raga\ Svara\ Luxury\ Retreat\ India.jpg") center center no-repeat;
+    background-size: cover;
+}
+
+nav {
+    height: 20vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav #logo {
+    width: 12vw;
+}
+
+nav ul {
+    height: 50%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+nav ul li a {
+    font-size: 1.2rem;
+    color: var(--white);
+    font-weight: 500;
+}
+
+nav ul .seperator {
+    height: 30%;
+    width: 2px;
+    background: var(--accent);
+}
+
+#slogan {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#slogan p {
+    color: var(--primary);
+    line-height: 1.5;
+    text-align: center;
+    font-size: 1.3rem;
+    word-spacing: 2pt;
+    font-weight: 500;
+}
+
+#monsoon-offer-section .monsoon-offer-banner {
+    background: url("../assets/images/Raga\ Svara\ Campus\ India.jpg");
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding: 2rem;
+}
+
+#yoga-retreat-section .yoga-retreat-banner {
+    background: url("../assets/images/Raga\ Svara\ Yoga\ Retreat\ India\ Rajkot.jpg");
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    padding: 2rem;
+}
+
+#yoga-retreat-section .yoga-retreat-banner .card-body {
+    justify-content: space-around;
+    gap: .3rem;
+}
+
+#newsletter-section .newsletter-container {
+    height: 80%;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    gap: 2rem;
+}
+
+#newsletter-section .newsletter-container .newsletter-banner {
+    background: url("../assets/images/Raga\ Svara\ Wellness\ Retreat\ India\ Rajkot.jpg") center center no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 30%;
+    border-radius: 1rem;
+}
+
+#newsletter-section .newsletter-container .newsletter-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 70%;
+    align-items: flex-start;
+    justify-content: flex-end;
+    gap: 2rem;
+}
+
+#newsletter-section .newsletter-container .newsletter-content .newsletter h1,
+#newsletter-section .newsletter-container .newsletter-content .stories h1 {
+    font-size: 2.2rem;
+    color: var(--primary);
+}
+
+#newsletter-section .newsletter-container .newsletter-content .stories h1 {
+    color: var(--font-color);
+}
+
+#newsletter-section .newsletter-container .newsletter-content .newsletter p,
+#newsletter-section .newsletter-container .newsletter-content .stories p {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+#wellbeing-section .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100vh;
+}
+
+#wellbeing-section .container h1 {
+    align-self: flex-start;
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+
+.wellbeing-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    row-gap: 2rem;
+    width: 100%;
+    min-height: 60%;
+    flex-wrap: wrap;
+}
+
+.wellbeing-container .wellbeing-card {
+    height: 100%;
+    width: 30%;
+    min-width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+
+.wellbeing-container .wellbeing-card img {
+    width: 80px;
+}
+
+.wellbeing-container .wellbeing-card h4 {
+    font-size: 1.5rem;
+}
+
+.wellbeing-container .wellbeing-card p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
